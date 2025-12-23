@@ -10,15 +10,58 @@ body{
 .banner{
     background-color: #fff;
     width: 300px;
-    height:150px
+    height:150px;
     border-radius: 10px;
-    posiiton: relative;
-    test-align: center;
+    position: relative;
+    text-align: center;
 }
 
 .pin{
     position: absolute;
     top: -150px;
     left: 45%;
-    color:fff;
+    color: #fff;
 }
+
+.lines{
+    position: relative;
+    top: 150px;
+    background-color: #ccc;
+}
+
+.lines::before{
+    content:"";
+    display:block;
+    width:150px;
+    height: 3px;
+    left: 7%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(120deg);
+}
+
+.lines::after{
+    content:"";
+    display:block;
+    width:150px;
+    height: 3px;
+    left: 34%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(-120deg);
+}
+
+.banner:hover{
+    transform: rotate(-30deg);
+}
+
+.banner img{
+    width:80px;
+    position:absolute ;
+    right:-40px;
+    top: -50px;
+    transform: rotate(30deg);
+}
+   
